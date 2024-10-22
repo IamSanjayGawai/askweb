@@ -11,7 +11,7 @@ const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  const backendUrl = import.meta.env.VITE_BACKEND_URL
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || `https://askexp-back.onrender.com`
 
   const { setDToken } = useContext(ExpertContext)
   const { setAToken } = useContext(AdminContext)
